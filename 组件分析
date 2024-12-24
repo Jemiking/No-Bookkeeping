@@ -1,0 +1,38 @@
+1. 主要组件（Widgets）分析：
+
+核心组件：
+- HomePage (StatefulWidget)
+- _HomePageState (State)
+- _AddTransactionButton (StatelessWidget)
+
+布局组件层级：
+1. Scaffold
+   ├── SafeArea
+      └── LayoutBuilder
+         └── Stack
+            ├── Column (主布局)
+            │  ├── _buildHeader()
+            │  ├── AnimatedBuilder (日历部分)
+            │  └── Expanded (交易列表)
+            └── Positioned (_AddTransactionButton)
+
+功能性组件：
+1. Header 部分
+   - Container (头部容器)
+   - Row (布局)
+   - IconButton (搜索和更多按钮)
+
+2. 日历部分
+   - AnimatedBuilder (动画构建器)
+   - Stack (日历主体)
+   - Column (日历内容)
+   - GridView.builder (日历网格)
+   - Material (展开按钮)
+
+3. 交易列表部分
+   - ListView.builder
+   - Container (列表项容器)
+   - Row (列表项布局)
+
+4. 浮动按钮
+   - FloatingActionButton 

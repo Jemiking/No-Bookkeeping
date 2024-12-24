@@ -1,0 +1,15 @@
+1. 当前的高度计算:
+   calendarHeight = (cellHeight * rowCount) + weekHeaderHeight
+   = (70 * 6) + 35 = 455px
+
+2. 需要的修改:
+   - 将 calendarHeight 改为固定值 400px
+   - 保持内部变量不变:
+     - cellHeight 保持 70px
+     - weekHeaderHeight 保持 35px
+     - rowCount 保持 6
+
+3. 修改后的效果:
+   - 日历区域整体高度变为 400px
+   - 内部单元格尺寸保持不变
+   - 可能会出现部分内容被裁切的情况 

@@ -1,0 +1,7 @@
+<invoke name="read_file">
+<parameter name="relative_workspace_path">lib/models/account.dart</parameter>
+<parameter name="should_read_entire_file">true</parameter>
+<parameter name="start_line_one_indexed">1</parameter>
+<parameter name="end_line_one_indexed_inclusive">100</parameter>
+<parameter name="explanation">查看 account.dart 中的 Account 定义。</parameter>
+</invoke> 
