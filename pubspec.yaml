@@ -1,15 +1,19 @@
 name: accounting_calendar
-description: A new Flutter project with calendar accounting features.
+description: A new Flutter project.
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.1.1
   cupertino_icons: ^1.0.2
+  intl: ^0.18.1
 
 dev_dependencies:
   flutter_test:
